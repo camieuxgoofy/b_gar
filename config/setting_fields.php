@@ -14,7 +14,7 @@ return [
                 'label' => 'App Name', // you know what label it is
                 'rules' => 'required|min:2|max:50', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Laravel Starter', // default value if you want
+                'value' => 'ECU Digital', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type
@@ -23,7 +23,7 @@ return [
                 'label' => 'Footer Text', // you know what label it is
                 'rules' => 'required|min:2', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => '<a href="https://github.com/nasirkhan/laravel-starter/" class="text-muted">Built with ♥ from Bangladesh</a>', // default value if you want
+                'value' => '<a href="https://google.com/" class="text-muted">ECU Digital</a>', // default value if you want
             ],
             [
                 'type' => 'checkbox', // input fields type
@@ -148,7 +148,7 @@ return [
                 'label' => 'Meta Site Name', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Awesome Laravel | A Laravel Starter Project', // default value if you want
+                'value' => 'Awesome Laravel | A ECU Digital Project', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type
@@ -157,7 +157,7 @@ return [
                 'label' => 'Meta Description', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'A CMS like modular starter application project built with latest Laravel.', // default value if you want
+                'value' => 'ECU ECU ECU ECU ECU ECU ECU ECU.', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type
@@ -166,7 +166,7 @@ return [
                 'label' => 'Meta Keyword', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Web Application, web app, Laravel, Laravel starter, Bootstrap, Admin, Template, Open Source, nasir khan saikat, nasirkhansaikat', // default value if you want
+                'value' => 'Web Application, web app, Laravel, ECU Digital, Bootstrap, Admin, Template, Open Source, nasir khan saikat, nasirkhansaikat', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type

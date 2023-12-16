@@ -1,7 +1,7 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/396987/82162573-6940f500-98c7-11ea-974e-888b4f866c74.jpg" alt="Laravel Starter - A CMS like modular starter project built with the latest Laravel framework."></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/396987/82162573-6940f500-98c7-11ea-974e-888b4f866c74.jpg" alt="ECU Digital - A CMS like modular starter project built with the latest Laravel framework."></p>
 
-# Laravel Starter (based on Laravel 10.x)
-**Laravel Starter** is a Laravel 10.x based simple starter project. Most of the commonly needed features of an application like `Authentication`, `Authorisation`, `User` and `Role management`, `Application Backend`, `Backup`, `Log viewer` are available here. It is modular, so you may use this project as a base and build your own modules. A module can be used in any `Laravel Starter` based projects. 
+# ECU Digital (based on Laravel 10.x)
+**ECU Digital** is a Laravel 10.x based simple starter project. Most of the commonly needed features of an application like `Authentication`, `Authorisation`, `User` and `Role management`, `Application Backend`, `Backup`, `Log viewer` are available here. It is modular, so you may use this project as a base and build your own modules. A module can be used in any `ECU Digital` based projects. 
 
 Please let me know your feedback and comments.
 
@@ -84,7 +84,7 @@ Several custom commands are available to add and update `role-permissions`. Plea
 
 # Features
 
-The `Laravel Starter` comes with several features which are the most common in almost all applications. It is a template project which means it is intended to build in a way that it can be used for other projects.
+The `ECU Digital` comes with several features which are the most common in almost all applications. It is a template project which means it is intended to build in a way that it can be used for other projects.
 
 It is a modular application, and some modules are installed by default. It will be helpful to use it as a base for future applications.
 
@@ -166,15 +166,15 @@ FontAwesome & CoreUI Icons, two different font icon library is installed for the
 
 __Home Page__
 
-![Laravel Starter Home](https://user-images.githubusercontent.com/396987/164892584-733afddc-8eab-4152-bd4a-d9c2f9e312d5.png)
+![ECU Digital Home](https://user-images.githubusercontent.com/396987/164892584-733afddc-8eab-4152-bd4a-d9c2f9e312d5.png)
 
 __Login Page__
 
-![Laravel Starter Login](https://user-images.githubusercontent.com/396987/164892620-3b4c8b1b-81c8-4630-a39f-38dadff89a7d.png)
+![ECU Digital Login](https://user-images.githubusercontent.com/396987/164892620-3b4c8b1b-81c8-4630-a39f-38dadff89a7d.png)
 
 __Posts Page__
 
-![Laravel Starter Posts Page](https://user-images.githubusercontent.com/396987/164892767-2f961466-e346-4990-a183-655ce5a6603b.png)
+![ECU Digital Posts Page](https://user-images.githubusercontent.com/396987/164892767-2f961466-e346-4990-a183-655ce5a6603b.png)
 
 __Backend Dashboard__
 
