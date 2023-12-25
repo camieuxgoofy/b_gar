@@ -97,11 +97,10 @@ class PostsController extends Controller
                 return view('backend.includes.action_column', compact('module_name', 'data'));
             })
             ->editColumn('name', function ($data) {
-                $is_featured = ($data->is_featured) ? '<span class="badge bg-primary">Featured</span>' : '';
 
-                return $data->name.' '.$data->status_formatted.' '.$is_featured;
+                return $data->name.' '.$data->status_formatted;
             })
-            ->editColumn('updated_at', function ($data) {
+            ->editColumn('updated_at', function ($data) {   
                 $module_name = $this->module_name;
 
                 $diff = Carbon::now()->diffInHours($data->updated_at);

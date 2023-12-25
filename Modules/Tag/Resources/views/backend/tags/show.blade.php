@@ -32,13 +32,13 @@
 
         <hr>
 
-        <div class="row mt-4">
-            <div class="col-12 col-sm-5">
+        <div class="mt-4">
+            <div class="col-12">
 
                 @include('backend.includes.show')
 
             </div>
-            <div class="col-12 col-sm-7">
+            {{-- <div class="col-12 col-sm-7">
 
                 <div class="text-center mb-4">
                     <a href='{{route("frontend.$module_name.show", [encode_id($$module_name_singular->id), $$module_name_singular->slug])}}' class="btn btn-success" target="_blank"><i class="fas fa-link"></i> Public View</a>
@@ -87,7 +87,7 @@
                         {{$posts->links('pagination::bootstrap-5')}}
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 

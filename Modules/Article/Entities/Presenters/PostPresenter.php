@@ -50,7 +50,7 @@ trait PostPresenter
     {
         switch ($this->status) {
             case '0':
-                return '<span class="badge bg-danger">Unpublished</span>';
+                return '<span class="badge bg-danger">Unpaid</span>';
                 break;
 
             case '1':
@@ -58,7 +58,7 @@ trait PostPresenter
                     return '<span class="badge bg-warning text-dark">Scheduled ('.$this->published_at_formatted.')</span>';
                 }
 
-                return '<span class="badge bg-success">Pubished</span>';
+                return '<span class="badge bg-success">Paid</span>';
                 break;
 
             case '2':

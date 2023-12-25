@@ -55,7 +55,7 @@
                                 Name
                             </th>
                             <th>
-                                Categoty
+                                Customer
                             </th>
                             <th class="text-end">
                                 Action
@@ -113,6 +113,7 @@
                 data: 'category_name',
                 name: 'category_name'
             },
+            
             {
                 data: 'action',
                 name: 'action',

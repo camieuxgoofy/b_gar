@@ -15,7 +15,7 @@
         <div class="form-group">
             <?php
             $field_name = 'slug';
-            $field_lable = label_case($field_name);
+            $field_lable = 'No. HP';
             $field_placeholder = $field_lable;
             $required = "";
             ?>
@@ -23,7 +23,7 @@
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-    <div class="col-12 col-sm-4">
+    {{-- <div class="col-12 col-sm-4">
         <div class="form-group">
             <?php
             $field_name = 'group_name';
@@ -34,9 +34,9 @@
             {{ html()->label($field_lable, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
-    </div>
+    </div> --}}
 </div>
-<div class="row mb-3">
+{{-- <div class="row mb-3">
     <div class="col-8">
         <div class="form-group">
             <?php
@@ -70,13 +70,13 @@
         </div>
     </div>
     @endif
-</div>
+</div> --}}
 <div class="row mb-3">
     <div class="col-12">
         <div class="form-group">
             <?php
             $field_name = 'description';
-            $field_lable = label_case($field_name);
+            $field_lable = 'Alamat';
             $field_placeholder = $field_lable;
             $required = "";
             ?>
@@ -86,7 +86,7 @@
     </div>
 </div>
 <hr>
-<div class="row mb-3">
+{{-- <div class="row mb-3">
     <div class="col-12 col-sm-4">
         <div class="form-group">
             <?php
@@ -123,9 +123,9 @@
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-</div>
+</div> --}}
 
-<div class="row mb-3">
+{{-- <div class="row mb-3">
     <div class="col-12 col-sm-4">
         <div class="form-group">
             <?php
@@ -136,11 +136,10 @@
             $select_options = [
                 'Active' => 'Active',
                 'Inactive' => 'Inactive',
-                'Draft' => 'Draft'
             ];
             ?>
             {{ html()->label($field_lable, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
             {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-select')->attributes(["$required"]) }}
         </div>
     </div>
-</div>
+</div> --}}

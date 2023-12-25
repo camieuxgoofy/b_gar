@@ -24,7 +24,7 @@ class TagsController extends BackendBaseController
     public function __construct()
     {
         // Page Title
-        $this->module_title = 'Tags';
+        $this->module_title = 'Barang';
 
         // module name
         $this->module_name = 'tags';
@@ -155,6 +155,6 @@ class TagsController extends BackendBaseController
 
         logUserAccess($module_title.' '.$module_action.' | Id: '.$$module_name_singular->id);
 
-        return redirect()->route('backend.tags.show', $$module_name_singular->id);
+        return redirect()->route('backend.tags.index', $$module_name_singular->id);
     }
 }

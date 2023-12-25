@@ -112,6 +112,6 @@
     "Comments": "Comments",
 
     "Draft": "Draft",
-    "Published": "Published",
-    "Unpublished": "Unpublished"
+    "Published": "Paid",
+    "Unpublished": "Unpaid"
 }
