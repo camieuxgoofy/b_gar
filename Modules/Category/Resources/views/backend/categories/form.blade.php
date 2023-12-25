@@ -54,7 +54,10 @@
         <div class="float-end">
             <figure class="figure">
                 <a href="{{ asset($data->$field_name) }}" data-lightbox="image-set" data-title="Path: {{ asset($data->$field_name) }}">
+                    @if ($data->getMedia($module_name)->first())
                     <img src="{{ asset($data->getMedia($module_name)->first()->getUrl('thumb300')) }}" class="figure-img img-fluid rounded img-thumbnail" alt="">
+                @endif
+                
                 </a>
                 <!-- <figcaption class="figure-caption">Path: </figcaption> -->
             </figure>

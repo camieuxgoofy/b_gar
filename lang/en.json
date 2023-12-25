@@ -5,9 +5,9 @@
     "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
     "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute.",
 
-    "Welcome to": "Welcome to :name Admin Dashboard.",
+    "Welcome to": "Welcome to :name Dashboard.",
     "Dashboard": "Dashboard",
-    "Admin Dashboard": "Admin Dashboard",
+    "Admin Dashboard": "Management Dashboard",
 
     "Name": "Name",
     "Email": "Email",
@@ -107,7 +107,7 @@
 
     "Open main menu": "Open main menu",
     "Posts": "Posts",
-    "Categories": "Categories",
+    "Categories": "Customers",
     "Tags": "Tags",
     "Comments": "Comments",
 
