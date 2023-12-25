@@ -24,7 +24,7 @@
         <x-slot name="toolbar">
             <x-backend.buttons.return-back />
             <a href="{{ route('backend.users.index') }}" class="btn btn-primary m-1" data-toggle="tooltip" title="List"><i class="fas fa-list"></i> List</a>
-            <a href="{{ route('backend.users.profile', $user->id) }}" class="btn btn-primary m-1" data-toggle="tooltip" title="Profile"><i class="fas fa-user"></i> Profile</a>
+            {{-- <a href="{{ route('backend.users.profile', $user->id) }}" class="btn btn-primary m-1" data-toggle="tooltip" title="Profile"><i class="fas fa-user"></i> Profile</a> --}}
             <x-buttons.edit route='{!!route("backend.$module_name.edit", $$module_name_singular)!!}' title="{{__('Edit')}} {{ ucwords(Str::singular($module_name)) }}" />
         </x-slot>
     </x-backend.section-header>
@@ -52,10 +52,10 @@
                         <td>{{ $user->email }}</td>
                     </tr>
 
-                    <tr>
+                    {{-- <tr>
                         <th>{{ __('labels.backend.users.fields.mobile') }}</th>
                         <td>{{ $user->mobile }}</td>
-                    </tr>
+                    </tr> --}}
 
                     <tr>
                         <th>{{ __('labels.backend.users.fields.password') }}</th>
@@ -64,7 +64,7 @@
                         </td>
                     </tr>
 
-                    <tr>
+                    {{-- <tr>
                         <th>{{ __('labels.backend.users.fields.social') }}</th>
                         <td>
                             <ul class="list-unstyled">
@@ -75,14 +75,14 @@
                                 @endforeach
                             </ul>
                         </td>
-                    </tr>
+                    </tr> --}}
 
                     <tr>
                         <th>{{ __('labels.backend.users.fields.status') }}</th>
                         <td>{!! $user->status_label !!}</td>
                     </tr>
 
-                    <tr>
+                    {{-- <tr>
                         <th>{{ __('labels.backend.users.fields.confirmed') }}</th>
                         <td>
                             {!! $user->confirmed_label !!}
@@ -90,7 +90,7 @@
                             <a href="{{route('backend.users.emailConfirmationResend', $user->id)}}" class="btn btn-primary btn-sm mt-1" data-toggle="tooltip" title="Send Confirmation Email"><i class="fas fa-envelope"></i> Send Confirmation Reminder</a>
                             @endif
                         </td>
-                    </tr>
+                    </tr> --}}
                     <tr>
                         <th>{{ __('labels.backend.users.fields.roles') }}</th>
                         <td>
@@ -104,7 +104,7 @@
                         </td>
 
                     </tr>
-                    <tr>
+                    {{-- <tr>
                         <th>{{ __('labels.backend.users.fields.permissions') }}</th>
                         <td>
                             @if($user->getAllPermissions()->count() > 0)
@@ -115,7 +115,7 @@
                             </ul>
                             @endif
                         </td>
-                    </tr>
+                    </tr> --}}
 
                     <tr>
                         <th>{{ __('labels.backend.users.fields.created_at') }}</th>
@@ -131,12 +131,12 @@
             </div>
 
             <div class="py-4 text-center">
-                @if ($user->status != 2)
+                {{-- @if ($user->status != 2)
                 <a href="{{route('backend.users.block', $user)}}" class="btn btn-danger mt-1" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.block')}}" data-confirm="Are you sure?"><i class="fas fa-ban"></i> Block</a>
                 @endif
                 @if ($user->status == 2)
                 <a href="{{route('backend.users.unblock', $user)}}" class="btn btn-info mt-1" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.unblock')}}" data-confirm="Are you sure?"><i class="fas fa-check"></i> Unblock</a>
-                @endif
+                @endif --}}
                 <a href="{{route('backend.users.destroy', $user)}}" class="btn btn-danger mt-1" data-method="DELETE" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.delete')}}" data-confirm="Are you sure?"><i class="fas fa-trash-alt"></i> Delete</a>
                 @if ($user->email_verified_at == null)
                 <a href="{{route('backend.users.emailConfirmationResend', $user->id)}}" class="btn btn-primary mt-1" data-toggle="tooltip" title="Send Confirmation Email"><i class="fas fa-envelope"></i> Email Confirmation</a>
@@ -144,7 +144,7 @@
             </div>
         </div>
 
-        <div class="col">
+        {{-- <div class="col">
             <h4>
                 User Profile
             </h4>
@@ -183,7 +183,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> --}}
     </div>
 </x-backend.layouts.show>
 @endsection

@@ -98,24 +98,24 @@
                     </div>
                 </div>
 
-                <div class="form-group row  mb-3">
+                {{-- <div class="form-group row  mb-3">
                     {{ html()->label(__('labels.backend.users.fields.confirmed'))->class('col-6 col-sm-2 form-control-label')->for('confirmed') }}
 
                     <div class="col-6 col-sm-10">
-                        {{ html()->checkbox('confirmed', true, '1') }} @lang('Email Confirmed')
+                        {{ html()->checkbox('confirmed', false, '1') }} @lang('Email Confirmed')
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="form-group row  mb-3">
+                {{-- <div class="form-group row  mb-3">
                     {{ html()->label(__('labels.backend.users.fields.email_credentials'))->class('col-6 col-sm-2 form-control-label')->for('confirmed') }}
 
                     <div class="col-6 col-sm-10">
-                        {{ html()->checkbox('email_credentials', true, '1') }} @lang('Email Credentials')
+                        {{ html()->checkbox('email_credentials', false, '1') }} @lang('Email Credentials')
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="form-group row  mb-3">
-                    {{ html()->label('Abilities')->class('col-sm-2 form-control-label') }}
+                    {{ html()->label('Roles')->class('col-sm-2 form-control-label') }}
 
                     <div class="col">
                         <div class="row  mb-3">
@@ -133,7 +133,7 @@
                                                     {{ html()->label(html()->checkbox('roles[]', old('roles') && in_array($role->name, old('roles')) ? true : false, $role->name)->id('role-'.$role->id) . "&nbsp;" . ucwords($role->name). "&nbsp;(".$role->name.")")->for('role-'.$role->id) }}
                                                 </div>
                                             </div>
-                                            <div class="card-body">
+                                            {{-- <div class="card-body">
                                                 @if ($role->id != 1)
                                                 @if ($role->permissions->count())
                                                 @foreach ($role->permissions as $permission)
@@ -145,7 +145,7 @@
                                                 @else
                                                 @lang('All Permissions')
                                                 @endif
-                                            </div>
+                                            </div> --}}
                                         </div>
                                         <!--card-->
                                         @endforeach
@@ -153,7 +153,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-5">
+                            {{-- <div class="col-12 col-sm-5">
                                 <div class="card card-accent-primary">
                                     <div class="card-header">
                                         @lang('Permissions')
@@ -168,7 +168,7 @@
                                         @endif
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

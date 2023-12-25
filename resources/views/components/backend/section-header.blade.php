@@ -11,11 +11,9 @@
             <i class="{{ $module_icon }}"></i> {{ __($module_title) }} <small class="text-muted">{{ __($module_action) }}</small>
         </h4>
         @endif
-
         <div class="small text-medium-emphasis">
-            {{ $subtitle }}
+            @lang(":module_title Management Dashboard", ['module_title'=>Str::title($module_title)])
         </div>
-    
     </div>
     @if($toolbar)
     <div class="btn-toolbar d-block text-end" role="toolbar" aria-label="Toolbar with buttons">

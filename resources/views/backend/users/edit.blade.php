@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="row mb-3">
+            {{-- <div class="row mb-3">
                 <?php
                 $field_name = 'confirmed';
                 $field_lable = __('labels.backend.users.fields.confirmed');
@@ -109,9 +109,9 @@
                         @endif
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <div class="row mb-3">
+            {{-- <div class="row mb-3">
                 <?php
                 $field_name = 'social';
                 $field_lable = __('labels.backend.users.fields.social');
@@ -134,7 +134,7 @@
                         @endforelse
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="form-group row mb-3">
                 {{ html()->label(__('Abilities'))->class('col-sm-2 form-control-label') }}
@@ -154,7 +154,7 @@
                                                 {{ html()->label(html()->checkbox('roles[]', in_array($role->name, $userRoles), $role->name)->id('role-'.$role->id) . "&nbsp;". ucwords($role->name) . "&nbsp;(".$role->name.")")->for('role-'.$role->id) }}
                                             </div>
                                         </div>
-                                        <div class="card-body">
+                                        {{-- <div class="card-body">
                                             @if ($role->id != 1)
                                             @if ($role->permissions->count())
                                             @foreach ($role->permissions as $permission)
@@ -166,7 +166,7 @@
                                             @else
                                             @lang('All Permissions')
                                             @endif
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <!--card-->
                                     @endforeach
@@ -174,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        {{-- <div class="col-sm-6">
                             <div class="card card-accent-info">
                                 <div class="card-header">
                                     @lang('Permissions')
@@ -189,7 +189,7 @@
                                     @endif
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -203,9 +203,9 @@
 
                 <div class="col-sm-8">
                     <div class="float-end">
-                        @if ($$module_name_singular->status != 2 && $$module_name_singular->id != 1)
+                        {{-- @if ($$module_name_singular->status != 2 && $$module_name_singular->id != 1)
                         <a href="{{route('backend.users.block', $$module_name_singular)}}" class="btn btn-danger" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.block')}}" data-confirm="Are you sure?"><i class="fas fa-ban"></i></a>
-                        @endif
+                        @endif --}}
                         @if ($$module_name_singular->status == 2)
                         <a href="{{route('backend.users.unblock', $$module_name_singular)}}" class="btn btn-info" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.unblock')}}" data-confirm="Are you sure?"><i class="fas fa-check"></i> Unblock</a>
                         @endif

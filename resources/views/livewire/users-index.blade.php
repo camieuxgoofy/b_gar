@@ -11,10 +11,10 @@
                             <th>{{ __('labels.backend.users.fields.email') }}</th>
                             <th>{{ __('labels.backend.users.fields.status') }}</th>
                             <th>{{ __('labels.backend.users.fields.roles') }}</th>
-                            <th>{{ __('labels.backend.users.fields.permissions') }}</th>
-                            <th>{{ __('labels.backend.users.fields.social') }}</th>
+                            {{-- <th>{{ __('labels.backend.users.fields.permissions') }}</th> --}}
+                            {{-- <th>{{ __('labels.backend.users.fields.social') }}</th> --}}
 
-                            <th class="text-end">{{ __('labels.backend.action') }}</th>
+                            {{-- <th class="text-end">{{ __('labels.backend.action') }}</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -30,7 +30,7 @@
                             <td>{{ $user->email }}</td>
                             <td>
                                 {!! $user->status_label !!}
-                                {!! $user->confirmed_label !!}
+                                {{-- {!! $user->confirmed_label !!} --}}
                             </td>
                             <td>
                                 @if($user->getRoleNames()->count() > 0)
@@ -65,16 +65,16 @@
                                 @can('edit_users')
                                 <a href="{{route('backend.users.edit', $user)}}" class="btn btn-primary btn-sm mt-1" data-toggle="tooltip" title="{{__('labels.backend.edit')}}"><i class="fas fa-wrench"></i></a>
                                 <a href="{{route('backend.users.changePassword', $user)}}" class="btn btn-info btn-sm mt-1" data-toggle="tooltip" title="{{__('labels.backend.changePassword')}}"><i class="fas fa-key"></i></a>
-                                @if ($user->status != 2)
+                                {{-- @if ($user->status != 2)
                                 <a href="{{route('backend.users.block', $user)}}" class="btn btn-danger btn-sm mt-1" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.block')}}" data-confirm="Are you sure?"><i class="fas fa-ban"></i></a>
-                                @endif
+                                @endif --}}
                                 @if ($user->status == 2)
                                 <a href="{{route('backend.users.unblock', $user)}}" class="btn btn-info btn-sm mt-1" data-method="PATCH" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.unblock')}}" data-confirm="Are you sure?"><i class="fas fa-check"></i></a>
                                 @endif
                                 <a href="{{route('backend.users.destroy', $user)}}" class="btn btn-danger btn-sm mt-1" data-method="DELETE" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.delete')}}" data-confirm="Are you sure?"><i class="fas fa-trash-alt"></i></a>
-                                @if ($user->email_verified_at == null)
+                                {{-- @if ($user->email_verified_at == null)
                                 <a href="{{route('backend.users.emailConfirmationResend', $user->id)}}" class="btn btn-primary btn-sm mt-1" data-toggle="tooltip" title="Send Confirmation Email"><i class="fas fa-envelope"></i></a>
-                                @endif
+                                @endif --}}
                                 @endcan
                             </td>
                         </tr>
