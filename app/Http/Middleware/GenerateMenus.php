@@ -111,18 +111,18 @@ class GenerateMenus
                 ]);
 
             // Submenu: Roles
-            // $accessControl->add('<i class="nav-icon fa-solid fa-user-shield"></i> Roles', [
-            //     'route' => 'backend.roles.index',
-            //     'class' => 'nav-item',
-            // ])
-            //     ->data([
-            //         'order' => 106,
-            //         'activematches' => 'admin/roles*',
-            //         'permission' => ['view_roles'],
-            //     ])
-            //     ->link->attr([
-            //         'class' => 'nav-link',
-            //     ]);
+            $accessControl->add('<i class="nav-icon fa-solid fa-user-shield"></i> Roles', [
+                'route' => 'backend.roles.index',
+                'class' => 'nav-item',
+            ])
+                ->data([
+                    'order' => 106,
+                    'activematches' => 'admin/roles*',
+                    'permission' => ['view_roles'],
+                ])
+                ->link->attr([
+                    'class' => 'nav-link',
+                ]);
 
             // Log Viewer
             // Log Viewer Dropdown

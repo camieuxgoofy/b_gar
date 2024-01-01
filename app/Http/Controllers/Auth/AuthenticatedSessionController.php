@@ -42,7 +42,8 @@ class AuthenticatedSessionController extends Controller
 
             event(new UserLoginSuccess($request, auth()->user()));
 
-            return redirect()->intended(RouteServiceProvider::HOME);
+            return redirect()->route('backend.dashboard');
+            // return redirect()->intended(RouteServiceProvider::HOME);
         }
 
         return back()->withErrors([
@@ -63,6 +64,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/login');
     }
 }

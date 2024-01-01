@@ -10,17 +10,17 @@ $notifications_latest = optional($notifications)->take(5);
             <i class="fa-solid fa-bars"></i>
         </button>
         <a class="header-brand d-sm-none" href="#">
-            <img class="sidebar-brand-full" src="{{asset('img/logo.png')}}" height="46" alt="{{ app_name() }}">
+            <img class="sidebar-brand-full" src="{{asset('img/logo-dark .png')}}" height="46" alt="{{ app_name() }}">
         </a>
         <ul class="header-nav d-none d-md-flex">
-            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.index') }}" target="_blank">{{app_name()}}&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            {{-- <li class="nav-item"><a class="nav-link" href="{{ route('frontend.index') }}" target="_blank">{{app_name()}}&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li> --}}
         </ul>
         <ul class="header-nav ms-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                {{-- <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa-regular fa-bell"></i>
                     &nbsp; @if($notifications_count)<span class="badge badge-pill bg-danger">{{$notifications_count}}</span>@endif
-                </a>
+                </a> --}}
                 <div class="dropdown-menu dropdown-menu-end pt-0">
                     <div class="dropdown-header bg-light py-2">
                         <strong>@lang("You have :count notifications", ['count'=>$notifications_count])</strong>
@@ -42,9 +42,9 @@ $notifications_latest = optional($notifications)->take(5);
 
         <ul class="header-nav ms-3">
             <li class="nav-item dropdown">
-                <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                {{-- <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa-solid fa-language"></i>&nbsp; {{strtoupper(App::getLocale())}}
-                </a>
+                </a> --}}
                 <div class="dropdown-menu dropdown-menu-end pt-0">
                     <div class="dropdown-header bg-light py-2">
                         <div class="fw-semibold">{{ __('Change language') }}</div>
@@ -71,16 +71,16 @@ $notifications_latest = optional($notifications)->take(5);
                     <a class="dropdown-item" href="{{route('backend.users.profile', Auth::user()->id)}}">
                         <i class="fa-regular fa-user me-2"></i>&nbsp;{{ Auth::user()->name }}
                     </a>
-                    <a class="dropdown-item" href="{{route('backend.users.profile', Auth::user()->id)}}">
+                    {{-- <a class="dropdown-item" href="{{route('backend.users.profile', Auth::user()->id)}}">
                         <i class="fa-regular fa-user me-2"></i>&nbsp;{{ Auth::user()->email }}
-                    </a>
+                    </a> --}}
 
                     <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item" href="{{ route('backend.notifications.index') }}">
+                    {{-- <a class="dropdown-item" href="{{ route('backend.notifications.index') }}">
                         <i class="fa-regular fa-bell me-2"></i>&nbsp;
                         @lang('Notifications') <span class="badge bg-danger ml-auto">{{$notifications_count}}</span>
-                    </a>
+                    </a> --}}
 
                     <div class="dropdown-header bg-light py-2"><strong>@lang('Settings')</strong></div>
 
